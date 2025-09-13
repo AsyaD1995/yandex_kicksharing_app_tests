@@ -18,7 +18,7 @@ def post_new_order(body):
                          headers=data.headers)
 
 # получаем заказ и возвращзаем в функцию его номер
-def get_order_id(track_number):
+def get_order_id():
     # получаем заказ
     track_id = post_new_order(data.order_body)
     # деалаем из json заказа строку с остатком адреса для get
